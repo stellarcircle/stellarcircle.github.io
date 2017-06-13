@@ -1,14 +1,104 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Stellar Circle</title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Stellar Circle</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+	.main-content {
+		background: rgba(20, 12, 28, 1);
+		color: white;
+	}
+
+	.game-bar {
+		min-height: 240px;
+		color: white;
+	}
+
+	.blue-revolver {
+		background-image: url('img/br_0009.png');
+		background-position: center;
+		background-size: 100%;
+	}
+
+	.game-bar h2 {
+		font-size: 80px;
+		text-shadow: 8px 8px 16px black; 
+	}
+
+	.footer-content {
+		background: rgba(68, 36, 52, 1);
+		color: white;
+	}
+	</style>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
-<p>Independent videogame developer.</p>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<header>
+		<div class="header-content">
+		<div class="header-content-inner text-center">
+		<img src="img/stellarcircle_logo2.png" style="max-height: 340px" />
+		</div>
+		</div>
+	</header>
+
+	<div class="main-content">
+	<div class="container">
+
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+		<p class="text-center lead" style="margin-top: 1em">Independent videogame developer.<br />2D action games.<br />Windows, Mac, Linux.<br />Coin eaters.</p>
+		</div>
+	</div>
+
+	<div class="row game-bar project-tower text-center">
+	<div class="col-md-12">
+	<h2>SC_NEXT_PROJECT</h2>
+	</div>
+	</div>
+
+	<div class="row game-bar blue-revolver text-center">
+	<div class="col-md-12">
+	<h2>BLUE REVOLVER</h2>
+	</div>
+	</div>
+
+	<hr />
+
+	<div class="row text-center">
+	<h1>Who We Are</h1>
+	</div>
+
+	</div>
+	</div>
+
+	<div class="footer-content">
+	<div class="container">
+		<div class="row" style="margin: 1em auto; font-size: 24px">
+			<div class="col-md-2 col-md-offset-5 text-center">
+				<a href=”#” style="color: white">
+					<span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
