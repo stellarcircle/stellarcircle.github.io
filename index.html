@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="https://use.fontawesome.com/a504deee89.js"></script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,29 +12,85 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 	<style>
+	body {
+		background: rgba(49, 33, 49, 1);
+	}
+	header {
+		background-image: url('img/banner.png');
+		background-position: center;
+		background-size: 100%;
+	}
+
+	.social-icons {
+		font-size: 40px;
+		color: white;
+	}
+
+	.social-icons a {
+		color: white;
+	}
+
 	.main-content {
-		background: rgba(20, 12, 28, 1);
 		color: white;
 	}
 
 	.game-bar {
 		min-height: 240px;
 		color: white;
-	}
-
-	.blue-revolver {
-		background-image: url('img/br_0009.png');
 		background-position: center;
 		background-size: 100%;
+		box-shadow: 8px 8px 4px #222;
+		position: relative;
+	}
+
+	.game-bar hr {
+		width: 20%;
+		margin-left: 0;
 	}
 
 	.game-bar h2 {
-		font-size: 80px;
-		text-shadow: 8px 8px 16px black; 
+		font-size: 64px;
+		margin-top: 24px;
+		font-weight: bold;
+		margin-bottom: 4px;
+	}
+
+	.game-bar h3 {
+		margin-top: 0;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	.game-bar-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding-left: 3em;
+		padding-top: 3em;
+		background: rgba(0, 0, 0, 0.6);
+		min-height: 100%;
+		height: 100%;
+		text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.75);
+	}
+
+	.game-bar-content:hover {
+		background: rgba(0, 0, 0, 0.2);
+		-webkit-transition: background 200ms linear;
+		-ms-transition: background 200ms linear;
+		transition: background 200ms linear;
+	}
+
+	.project-tower {
+		background-image: url('img/newproj_sky.png');
+	}
+	.blue-revolver {
+		background-image: url('img/br_0009.png');
 	}
 
 	.footer-content {
-		background: rgba(68, 36, 52, 1);
+		background: rgba(118, 192, 190, 1);
 		color: white;
 	}
 	</style>
@@ -49,51 +106,41 @@
 	<header>
 		<div class="header-content">
 		<div class="header-content-inner text-center">
-		<img src="img/stellarcircle_logo2.png" style="max-height: 340px" />
+		<img src="img/stellarcircle_logo2_shadow.png" style="max-height: 340px" />
 		</div>
 		</div>
 	</header>
 
 	<div class="main-content">
-	<div class="container">
+		<div class="container">
 
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-		<p class="text-center lead" style="margin-top: 1em">Independent videogame developer.<br />2D action games.<br />Windows, Mac, Linux.<br />Coin eaters.</p>
-		</div>
-	</div>
-
-	<div class="row game-bar project-tower text-center">
-	<div class="col-md-12">
-	<h2>SC_NEXT_PROJECT</h2>
-	</div>
-	</div>
-
-	<div class="row game-bar blue-revolver text-center">
-	<div class="col-md-12">
-	<h2>BLUE REVOLVER</h2>
-	</div>
-	</div>
-
-	<hr />
-
-	<div class="row text-center">
-	<h1>Who We Are</h1>
-	</div>
-
-	</div>
-	</div>
-
-	<div class="footer-content">
-	<div class="container">
-		<div class="row" style="margin: 1em auto; font-size: 24px">
-			<div class="col-md-2 col-md-offset-5 text-center">
-				<a href=”#” style="color: white">
-					<span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
-				</a>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+				<p class="text-center lead" style="margin-top: 1em">Independent videogame developer.<br />2D action games.<br />Windows, Mac, Linux.<br />Coin eaters.</p>
+				</div>
 			</div>
+
+			<div class="row game-bar project-tower">
+				<div class="col-md-12 game-bar-content">
+					<h2>????????? ????</h2>
+					<h3>TBA - Win/Mac/Linux - Boss rusher</h3>
+				</div>
+			</div>
+
+			<a href="http://bluerevolvergame.com"><div class="row game-bar blue-revolver">
+				<div class="col-md-12 game-bar-content">
+					<h2>BLUE REVOLVER</h2>
+					<h3>Oct 2016 - Win/Mac/Linux - Manic shooter</h3>
+				</div>
+			</div></a>
+
+			<div class="row" style="margin: 2em">
+				<div class="col-md-12">
+					<div class="text-center social-icons"><a href="https://twitter.com/stellarcircle_"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+				</div>
+			</div>
+
 		</div>
-	</div>
 	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
